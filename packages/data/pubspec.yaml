@@ -20,6 +20,10 @@ dependencies:
   connectivity: ^3.0.4
   dartz: ^0.10.0-nullsafety.2
 
+  # Personal packages
+  domain:
+    path: ../domain
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
