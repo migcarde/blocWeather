@@ -1,0 +1,3 @@
+class CurrentWeatherRepositoryContract {
+  Future<Either<
+}

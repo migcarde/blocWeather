@@ -18,6 +18,7 @@ dependencies:
   equatable: ^2.0.2
   http: ^0.13.3
   connectivity: ^3.0.4
+  dartz: ^0.10.0-nullsafety.2
 
 dev_dependencies:
   flutter_test:
