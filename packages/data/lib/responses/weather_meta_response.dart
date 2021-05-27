@@ -1,3 +1,4 @@
+import 'package:domain/business/weather_meta_business.dart';
 import 'package:equatable/equatable.dart';
 
 class WeatherMetaResponse extends Equatable {
@@ -38,4 +39,13 @@ class WeatherMetaResponse extends Equatable {
           longitude: json['longitude'],
           dailyRequestLimit: json['dailyRequestLimit'],
           requestRemaining: json['requestRemaining']);
+
+  toDomain() => WeatherMetaBusiness(
+      city: city,
+      country: country,
+      adminCode: adminCode,
+      latitude: latitude,
+      longitude: longitude,
+      dailyRequestLimit: dailyRequestLimit,
+      requestRemaining: requestRemaining);
 }

@@ -1,5 +1,6 @@
 import 'package:data/responses/weather_city_data_response.dart';
 import 'package:data/responses/weather_meta_response.dart';
+import 'package:domain/business/current_weather_business.dart';
 import 'package:equatable/equatable.dart';
 
 class CurrentWeatherResponse extends Equatable {
@@ -15,4 +16,7 @@ class CurrentWeatherResponse extends Equatable {
       CurrentWeatherResponse(
           meta: WeatherMetaResponse.fromJson(json['meta']),
           data: WeatherCityDataResponse.fromJson(json['data']));
+
+  toDomain() =>
+      CurrentWeatherBusiness(meta: meta.toDomain(), data: data.toDomain());
 }

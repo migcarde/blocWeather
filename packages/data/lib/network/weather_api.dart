@@ -5,7 +5,7 @@ abstract class WeatherApiContract {
 
 class WeatherApi implements WeatherApiContract {
   @override
-  String baseUrl = 'https://api.therainery.com/forecast/weather';
+  String baseUrl = 'api.therainery.com';
   // TODO: Remove it
   @override
   String apiKey = '83E5YGBFCYa2YzyLqvPKV6Pqxo3JGjOjdwDjhnJf';

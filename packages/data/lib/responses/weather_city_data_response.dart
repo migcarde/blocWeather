@@ -1,3 +1,4 @@
+import 'package:domain/business/weather_city_data_business.dart';
 import 'package:equatable/equatable.dart';
 
 class WeatherCityDataResponse extends Equatable {
@@ -82,4 +83,24 @@ class WeatherCityDataResponse extends Equatable {
           totalPrecipitationRate: json['totalPrecipitationRate'],
           windDirection: json['windDirection'],
           windSpeed: json['windSpeed']);
+
+  toDomain() => WeatherCityDataBusiness(
+      timestamp: timestamp,
+      date: date,
+      airTemperature: airTemperature,
+      cape: cape,
+      dewPointTemperature: dewPointTemperature,
+      gust: gust,
+      highCloudCover: highCloudCover,
+      horizontalVisibility: horizontalVisibility,
+      lowCloudCover: lowCloudCover,
+      mediumCloudCover: mediumCloudCover,
+      relativeHumidity: relativeHumidity,
+      snowDepth: snowDepth,
+      soilMoistureSurface: soilMoistureSurface,
+      surfacePressure: surfacePressure,
+      totalCloudCover: totalCloudCover,
+      totalPrecipitationRate: totalPrecipitationRate,
+      windDirection: windDirection,
+      windSpeed: windSpeed);
 }
